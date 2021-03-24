@@ -9,73 +9,62 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Document</title>
+    <title>Medical Proximity Map</title>
 </head>
 
 <body>
     <h1>Doctors and Clinic Search Database</h1>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" href="search.html">Search</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Results</a>
+            <a class="nav-link" href="results.html">Results</a>
         </li>
     </ul>
     <div class="card-group">
         <div class="card">
-          <img src="https://static.thenounproject.com/png/23420-200.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Find Your Doctor</h5>
-            <p class="card-text">Use our database to search for doctors in your local area, with specialties needed
-                to treat whatever ailments you're expierencing at this time.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+            <img src="https://static.thenounproject.com/png/23420-200.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Find Your Doctor</h5>
+                <p class="card-text">Use our database to search for doctors in your local area, with specialties needed
+                    to treat whatever ailments you're expierencing at this time.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
         </div>
         <div class="card">
             <img src="https://image.freepik.com/free-icon/clinic_318-1538.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-              <h6>Choose Doctor By Specialty</h6>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-          </div>
+            <div class="card-body">
+                <h6>Choose Doctor By Specialty</h6>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
     <br>
     <br>
     <br>
     <br>
     <br>
     <h5>Submit your request and information for a list of doctors, matching the criteria.</h5>
-    <!-- <div class="row g-3">
-        <div class="col">
-            <label for="inputFirstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-        </div>
-        <div class="col">
-            <label for="inputLastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-        </div>
-    </div> -->
+ 
     <form class="row g-3">
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <label for="inputAddress" id="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" placeholder="1234 Main St">
         </div>
         <div class="col-12">
-            <label for="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <label for="inputAddress2" id="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
         </div>
         <div class="col-md-6">
             <label for="inputCity" id="inputCity" class="form-label">City</label>
@@ -85,24 +74,25 @@
             <label for="inputState" class="form-label">State</label>
             <select id="inputState" class="form-select">
                 <option selected>Choose...</option>
-                <option>...</option>
+                <option>...
+                </option>
             </select>
         </div>
         <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
+            <label for="inputZip" id="state" class="form-label">Zip</label>
             <input type="text" class="form-control" id="inputZip">
         </div>
 
         </label>
     </form>
 
+    <div class="col-12">
+        <button type="submit" id="myBtn" class="btn btn-primary">Search</button>
+    </div>
+    <footer>Page Created By Group 1 March, 2021</footer>
 
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Search</button>
-        </div>
-        <footer>Page Created By Group 1 March, 2021</footer>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-git.js"></script>
-<script src="./assets/script.js"></script>
 
 </html>
