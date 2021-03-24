@@ -1,10 +1,20 @@
-var city = document.getElementById("inputCity");
-localStorage.setItem("city", '');
+const api = {
+	key: "AIzaSyCrQVvBFJJPIjoJ3XpVuJxmc5-NBGZoERc",
+}
 
-var address = document.getElementById("inputAddress");
-localStorage.setItem("address", '');
+var city = document.getElementById("city");
+localStorage.setItem("city", inputCity.value);
 
-var address2 = document.getElementById("inputAddress2");
-localStorage.setItem("address2", '');
+var address = document.getElementById("address");
+localStorage.setItem("address", inputAddress.value);
 
+var address2 = document.getElementById("address2");
+localStorage.setItem("address2", inputAddress2.value);
 
+var zip =  document.getElementById("zip");
+localStorage.setItem("zip", inputZip.value);
+
+function store(){
+    var inputCity= document.getElementById("city");
+    localStorage.setItem("city", inputCity.value);
+   }
