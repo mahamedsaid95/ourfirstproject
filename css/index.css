@@ -16,9 +16,19 @@ body{
     color: black;
     background-color: gray;
 }
+
 h1{
     text-align: center;
 }
+
+h2{
+    text-align: center;
+}
+
+.message{
+    font-size:  25px;
+}
+
 .container {
     display: block;
     width: 100%;
