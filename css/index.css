@@ -61,7 +61,10 @@ footer {
     width: 100%;
     border-top: 1px solid white;
     justify-content:center;
-       align-items:center;
-     
-    
-    }
+    align-items:center;
+}
+.message{
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}

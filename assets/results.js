@@ -16,3 +16,16 @@ messageForm.addEventListener('submit', event => {
 const message = localStorage.getItem('message');
 
 messageElement.textContent = message;
+
+
+
+
+
+var inputZip = document.URL;
+var url = new URL(inputZip);
+console.log(url)
+var c = url.searchParams.get("inputZip");
+console.log(c);
+
+
+
