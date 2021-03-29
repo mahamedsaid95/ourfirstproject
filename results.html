@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Results</title>
 </head>
+
 <body>
+
+    
     <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="search.html">Search</a>
+            <a class="nav-link" href="search.html">Search</a>
         </li>
-      </ul>
+    </ul>
 
-      <script src="./assets/results.js"></script>
+    
+
+    <iframe width="600" height="450" style="border:0" loading="lazy" id="map" allowfullscreen
+    src="https://www.google.com/maps/embed/v1/place?q=${inputZip}&key=AIzaSyCrQVvBFJJPIjoJ3XpVuJxmc5-NBGZoERc"></iframe>
+    <form class="message">
+        <h1>Please leave a message afterword, on how we can better serve you.</h1>
+    <form action="">
+        <label>Message: <input type="text" name="message" class="message"></label>
+        <button type="submit">Save</button> <span id="feedback"></span>
+    </form>
+</form>
+    <h2 id="message"></h2>
+
+
+    <footer>Page Created By Group 1 March, 2021</footer>
+
+    <script language="javascript" src="https://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCrQVvBFJJPIjoJ3XpVuJxmc5-NBGZoERc"></script>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="./assets/results.js"></script>
 </body>
+
 </html>

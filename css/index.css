@@ -16,9 +16,19 @@ body{
     color: black;
     background-color: gray;
 }
+
 h1{
     text-align: center;
 }
+
+h2{
+    text-align: center;
+}
+
+.message{
+    font-size:  25px;
+}
+
 .container {
     display: block;
     width: 100%;
@@ -51,7 +61,10 @@ footer {
     width: 100%;
     border-top: 1px solid white;
     justify-content:center;
-       align-items:center;
-     
-    
-    }
+    align-items:center;
+}
+.message{
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}

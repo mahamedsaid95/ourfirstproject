@@ -1,20 +1,35 @@
-const api = {
-	key: "AIzaSyCrQVvBFJJPIjoJ3XpVuJxmc5-NBGZoERc",
-}
+var time;
+var date;
+var update = function () {
+    date = moment()
+    time.html(date.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+};
+$(document).ready(function(){
+    time = $('#a1');
+    update();
+    setInterval(update, 1000);
+});
 
-var city = document.getElementById("city");
-localStorage.setItem("city", inputCity.value);
 
-var address = document.getElementById("address");
-localStorage.setItem("address", inputAddress.value);
+// const api = {
+// 	key: "AIzaSyCrQVvBFJJPIjoJ3XpVuJxmc5-NBGZoERc",
+//     base: "https://maps.googleapis.com/maps/api/place/nearbysearch/output?parameters",
+// }
 
-var address2 = document.getElementById("address2");
-localStorage.setItem("address2", inputAddress2.value);
+function handleSubmit(event) {
+    event.preventDefault();
+  
+    const data = new FormData(event.target);
+  
+    const value = data.get('inputZip');
+    console.log(inputZip)
+  
+    console.log({ value });
+  }
+  
+  const form = document.querySelector('form');
+  form.addEventListener('submit', handleSubmit);
 
-var zip =  document.getElementById("zip");
-localStorage.setItem("zip", inputZip.value);
-
-function store(){
-    var inputCity= document.getElementById("city");
-    localStorage.setItem("city", inputCity.value);
-   }
+document.getElementById('button-1').addEventListener('click', function(){
+  window.location.href = 'results.html?zip_code='
+})

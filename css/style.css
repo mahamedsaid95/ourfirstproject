@@ -14,6 +14,7 @@ body{
     font-family: 'Chango', cursive;
     color: white;
 }
+
 .nav{
     background-color: grey;
     padding: 0;
@@ -37,3 +38,20 @@ body{
     background-color: transparent;
     text-decoration: underline;
   }
+
+  #feedback {
+    color: green;
+  }
+  footer {
+    display:flex;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid white;
+    color: black;
+    justify-content:center;
+    align-items:center;
+}

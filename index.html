@@ -9,66 +9,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Medical Proximity Map</title>
+    <title>Covid Stats Page</title>
 </head>
 
 <body>
-    <h1>Doctors and Clinic Search Database</h1>
-    <ul class="nav">
+    <h1>Search Covid stats by zip/postal code</h1>
+    <!-- <ul class="nav">
         <li class="nav-item">
             <a class="nav-link" href="search.html">Search</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="results.html">Results</a>
         </li>
-    </ul>
+    </ul> -->
     <div class="card-group">
         <div class="card">
             <img src="https://static.thenounproject.com/png/23420-200.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Find Your Doctor</h5>
-                <p class="card-text">Use our database to search for doctors in your local area, with specialties needed
-                    to treat whatever ailments you're expierencing at this time.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 class="card-title">Find your area</h5>
+                <p class="card-text">Use our database to search for statists in your local area, pertaining to infection
+                    rates, death tolls all pertaining to your specific area.</p>
+                <p id="a1"></p>
             </div>
         </div>
         <div class="card">
             <img src="https://image.freepik.com/free-icon/clinic_318-1538.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h6>Choose Doctor By Specialty</h6>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+               
+                    <h3>Hit Search to find covid stats within close Proximity</h3>
+                    <a href="./search.html"><h4>SEARCH</h4></a>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
+    <!-- <br>
+    <br>    
     <br>
     <br>
     <br>
     <h5>Submit your request and information for a list of doctors, matching the criteria.</h5>
- 
+    <form action="">
     <form class="row g-3">
         <div class="col-12">
             <label for="inputAddress" id="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-            <label for="inputAddress2" id="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+            <input type="text" class="form-control" placeholder="123 Main Street">
         </div>
         <div class="col-md-6">
             <label for="inputCity" id="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" placeholder="Anywhere, USA">
         </div>
         <div class="col-md-4">
             <label for="inputState" class="form-label">State</label>
@@ -79,17 +67,17 @@
             </select>
         </div>
         <div class="col-md-2">
-            <label for="inputZip" id="state" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+            <label for="inputZip" id="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" placeholder="11203">
+            
         </div>
 
         </label>
     </form>
+</form>
 
-    <div class="col-12">
-        <button type="submit" id="myBtn" class="btn btn-primary">Search</button>
-    </div>
-    <footer>Page Created By Group 1 March, 2021</footer>
+    <button type="click">Save</button> <span id="feedbacks"></span>
+    <footer>Page Created By Group 1 March, 2021</footer> -->
 
     <script src="https://code.jquery.com/jquery-git.js"></script>
     <script src="./assets/script.js"></script>
