@@ -19,12 +19,17 @@ messageElement.textContent = message;
 
 
 
+var currentLocation = document.URL;
+var url = new URL(currentLocation);
+var bob = url.href.split("?")
+var zip = bob[1].split("=")
+$("#mapContainer").append(` <iframe width="600" height="450" style="border:0" loading="lazy" id="map" allowfullscreen
+src="https://www.google.com/maps/embed/v1/place?q=${zip[1]}&key=AIzaSyCrQVvBFJJPIjoJ3XpVuJxmc5-NBGZoERc"></iframe>`)
 
-
-var inputZip = document.URL;
-var url = new URL(inputZip);
-console.log(url)
-var c = url.searchParams.get("inputZip");
+// .attr("src", "https://www.google.com/maps/embed/v1/place?q=zipCode" + zip[1] + "&key=AIzaSyCrQVvBFJJPIjoJ3XpVuJxmc5-NBGZoERc"))
+console.log(zip)
+// console.log(url.href.split("?",1))
+var c = url.searchParams.get("zipCode");
 console.log(c);
 
 
