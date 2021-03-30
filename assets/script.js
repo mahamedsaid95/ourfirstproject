@@ -19,17 +19,20 @@ $(document).ready(function(){
 function handleSubmit(event) {
     event.preventDefault();
   
-    const data = new FormData(event.target);
+    const data = document.getElementById("zipCode").value;
+
   
-    const value = data.get('inputZip');
-    console.log(inputZip)
+    // const value = data.get('zipCode');
+    // console.log(value)
   
-    console.log({ value });
+    console.log(data);
+    window.location.href = 'results.html?zip_code=' + data
   }
   
-  const form = document.querySelector('form');
-  form.addEventListener('submit', handleSubmit);
+//   const form = document.querySelector('form');
+//   form.addEventListener('submit', handleSubmit);
 
 document.getElementById('button-1').addEventListener('click', function(){
-  window.location.href = 'results.html?zip_code='
+    handleSubmit(event);
+
 })
